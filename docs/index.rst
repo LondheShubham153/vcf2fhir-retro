@@ -1,6 +1,6 @@
 
-VCF to FHIR Converter
-==========================
+Welcome to VCF to FHIR documentation!
+=======================================
 
 Release v\ |version|. (:ref:`Installation <install>`)
 
@@ -38,16 +38,16 @@ Beloved Features
 vcf2fhir is ready for today's web.
 
 **Input:** 
--VCF file (required): Path to a text-based or bgzipped VCF file.
--Tabix file (required if VCF file is bgzipped): Path to tabix index of VCF file.
--Genome build (required): Must be one of 'GRCh37' or 'GRCh38'.
--Patient ID (required): Supplied patient ID is inserted into generated FHIR output.
--Conversion region (optional): VCF region(s) to convert.
--Studied region (optional): Genomic regions that have been studied by the lab.
--Noncallable region (optional): Subset of studied region(s) that are deemed uncallable by the lab.
+*VCF file (required): Path to a text-based or bgzipped VCF file.
+*Tabix file (required if VCF file is bgzipped): Path to tabix index of VCF file.
+*Genome build (required): Must be one of 'GRCh37' or 'GRCh38'.
+*Patient ID (required): Supplied patient ID is inserted into generated FHIR output.
+*Conversion region (optional): VCF region(s) to convert.
+*Studied region (optional): Genomic regions that have been studied by the lab.
+*Noncallable region (optional): Subset of studied region(s) that are deemed uncallable by the lab.
 
 **Output:**
--FHIR Genomics Diagnostic Report (in JSON format) that contains converted variants. 
+*FHIR Genomics Diagnostic Report (in JSON format) that contains converted variants. 
 
 vcf2fhir officially supports Python 3.6+, and runs great on PyPI.
 
@@ -64,8 +64,6 @@ instructions for getting the most out of Requests.
 
    user/install
    user/quickstart
-   user/advanced
-   user/authentication
 
 
 The Community Guide
