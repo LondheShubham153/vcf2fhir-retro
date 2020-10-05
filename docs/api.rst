@@ -3,7 +3,8 @@
 Developer Interface
 ===================
 
-.. module:: vcf2fhir
+vcf2fhir
+~~~~~~~~~~
 
 This part of the documentation covers all the interfaces of vcf2fhir. For
 parts where vcf2fhir depends on external libraries, we document the most
@@ -15,42 +16,44 @@ Main Interface
 
 All of Requests' functionality can be accessed by these 5 modules.
 
-.. autofunction:: vcf2fhir
+========
+vcf2fhir
+========
 
-.. autofunction:: common.py
-.. autofunction:: converter.py
-.. autofunction:: fhir_helper.py
-.. autofunction:: gene_ref_seq.py
-.. autofunction:: json_generator.py
+***********************************************************************
+common.py
+***********************************************************************
+converter.py
+***********************************************************************
+fhir_helper.py
+***********************************************************************
+gene_ref_seq.py
+***********************************************************************
+json_generator.py
+***********************************************************************
 
 common.py
 ~~~~~~~~~
 
 This module contains the helper functions for generating the fhir response.
 
-Usage from vcf2fhir.common import _Utilities
+**Usage from vcf2fhir.common import _Utilities**
 
-_Utilities.getFhirDate():
-	
-	This function returns the current date into fhir format i.e 2020-09-30T13:00:00Z
+**_Utilities.getFhirDate():**
+This function returns the current date into fhir format i.e 2020-09-30T13:00:00Z
 
-_Utilities.getSequenceRelation(phasedRecMap): 
+**_Utilities.getSequenceRelation(phasedRecMap): **
+This function takes an argument of Phase Records and returns the Sequence relations in the form of a dataframe of a Relation Table with columns,'POS1','POS2', and 'Relation'.
 
-	This function takes an argument of Phase Records and returns the Sequence relations in the form of a dataframe of a Relation Table with columns,'POS1','POS2', and 'Relation'.
-
-_Utilities.getAllelicState(record):
-	
+**_Utilities.getAllelicState(record):**
 This function takes an argument of vcf file records as a data frame and returns a dictionary of allelic state and allelic code as {'ALLELE': allelicState, 'CODE' : allelicCode}
 
-_Utilities.extract_chrom_identifier(chrom):
-
+**_Utilities.extract_chrom_identifier(chrom):**
 This function takes an argument of chromosome and in case of “CHR” returns “” and in case of “MT” returns “M” to normalise the regions in FHIR response.
 
-_Utilities._error_log_allelicstate(record):
-
+**_Utilities._error_log_allelicstate(record):**
 This function takes an argument of vcf file records as a dataframe and logs an error in case Allelic State cannot be determined.
  
-
 converter.py
 ~~~~~~~~~~~~~~~~~
 
