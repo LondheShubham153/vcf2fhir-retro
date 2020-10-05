@@ -5,17 +5,12 @@ Welcome to VCF to FHIR documentation!
 Release v\ |version|. (:ref:`Installation <install>`)
 
 
-.. image:: https://pepy.tech/badge/requests
-    :target: https://pepy.tech/project/requests
-    
 .. image:: https://img.shields.io/pypi/l/requests.svg
-    :target: https://pypi.org/project/requests/
+    :target: https://pypi.org/project/vcf2fhir/
 
 .. image:: https://img.shields.io/pypi/wheel/requests.svg
-    :target: https://pypi.org/project/requests/
+    :target: https://pypi.org/project/vcf2fhir/
 
-.. image:: https://img.shields.io/pypi/pyversions/requests.svg
-    :target: https://pypi.org/project/requests/
 
 **vcf2fhir** is an elegant and simple library for Python, built for translating vcf files to FHIR diagnostic reports.
 
@@ -70,16 +65,12 @@ The Community Guide
 -------------------
 
 This part of the documentation, which is mostly prose, details the
-Requests ecosystem and community.
+vcf2fhir ecosystem and community.
 
 .. toctree::
    :maxdepth: 2
 
-   community/recommended
-   community/faq
-   community/out-there
    community/support
-   community/vulnerabilities
    community/release-process
 
 .. toctree::
